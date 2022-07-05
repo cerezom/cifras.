@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.parent {
+    width: 100vw;
+    height: 120vh;
+background-image: url(/cifra-web-app-master/image0\ \(5\).jpeg);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 2em;
+grid-row-gap: 2em;
+}
+
+.div1 { 
+width: 60%;
+display: block;
+margin-left: 30px;
+margin-top: 30px;
+grid-area: 1 / 1 / 2 / 2; 
+}
+
+.div2 { 
+margin: auto;
+margin-bottom: 2%;
+z-index: 1;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.div2__text{
+    color: rgb(205, 205, 205);
+}
+
+.div2__title{
+    text-decoration: underline rgb(9, 9, 9);
+    text-decoration: solid;
+}
+
+.div3 { 
+    padding: 50px;
+    margin: auto;
+    grid-area: 2 / 1 / 3 / 2;
+}
+.div3__text{
+    padding: 30px;
+    margin: auto;
+    color:white;
+}
+
+.div4 { 
+    padding: 45px;
+    margin: auto;
+    grid-area: 2 / 2 / 3 / 3; 
+    z-index: 1;
+}
+
+.div4__text{
+    padding-right: 40px;
+    font-size: 10px;
+    color: rgba(162,171,186,255);
+}
+
+
+.cta{
+    display: inline-block;
+    background-color: rgba(243,244,255,255);
+    justify-self: center;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    border-style: dashed;
+    border-color: rgba(193,221,176,255);
+    transition: background-color .8s;
+}
+
+.cta:hover{
+    background-color: rgba(157,197,54,255);
+}
+
+
+.container {  
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "maletin titulo flecha"
+    "maletin desc flecha";
+}
+
+.maletin { 
+    grid-template-columns: auto;
+    align-self: center;
+    grid-area: maletin; 
+}
+
+.titulo { 
+    grid-area: titulo; 
+}
+
+.desc { 
+    grid-area: desc; 
+}
+
+.flecha {
+    align-self: center;
+    grid-area: flecha; 
+}
+
+
+.div5 { 
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div5__img{
+    justify-content: end;
+    align-content: flex-end;
+    width: 60%;
+    display: block;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.div6 { 
+    display: block;
+    background-image: url(./fondoblanco.jpg);
+    background-size: 100% 100%;
+    grid-area: 1 / 2 / 4 / 3; 
+}

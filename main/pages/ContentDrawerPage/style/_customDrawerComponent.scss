@@ -1,0 +1,36 @@
+@import './utilities/variables';
+
+.style_icon_button_menu_open_drawer{
+    color: $color_icon_button_menu_open_drawer;
+    background-color: $background_color_icon_button_menu_open_drawer;
+    margin: 5px;
+    
+    &:hover{
+        background-color: $background_color_select_icon_button_menu_open_drawer
+    };
+
+    .Mui-disabled{
+        background-color: transparent;
+        color: rgb(0 0 0 / 0%)
+    }; 
+};
+
+.drawer_components_new_style{  
+    .MuiDrawer-paper {
+        background-color:$background_color_drawer_components; 
+        box-sizing: border-box;
+        width: 240px;  
+    };
+};
+
+@media only screen and (max-width: 600px) {
+    .drawer_components_new_style{
+        display:block;
+    };
+};
+
+@media only screen and (max-width: 0px) {
+    .drawer_components_new_style {
+        display:none;
+    };
+};
